@@ -26,7 +26,7 @@ public class Auditable {
     private LocalDateTime updatedAt;
 
     @Column(name = "deleted_at")
-    private LocalDateTime deletedAt = null;
+    private LocalDateTime deletedAt;
 
     public boolean isDeleted() {
         return this.deletedAt != null;
