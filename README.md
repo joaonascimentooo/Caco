@@ -1,51 +1,45 @@
-# CacoIA 🐵
+# 🐵 CacoIA: Seu Parceiro Inteligente para Reciclagem de Conteúdo! ♻️
 
-Mascote: Macaco sorrindo
+> Uma aplicação web completa para otimizar e reciclar seu conteúdo usando o poder da Inteligência Artificial, com uma interface moderna e um mascote cativante para todas as idades.
 
-## Sobre o Projeto
+## 🚀 Sobre o Projeto
 
-CacoIA é uma aplicação web completa para reciclagem de conteúdo utilizando IA, com interface moderna e mascote infantil.
+CacoIA é mais do que uma ferramenta; é uma solução inteligente que transforma a forma como você interage com seu conteúdo. Seja para reformular textos, extrair informações chave ou gerar novas ideias, CacoIA simplifica o processo, permitindo que você maximize o valor de cada palavra. Nossa interface amigável e o mascote Caco garantem uma experiência divertida e eficiente.
 
-## Arquitetura
 
-O projeto é dividido em 3 partes:
+## ⚙️ Arquitetura do Projeto
 
-- **Frontend**: React + Vite + Tailwind CSS
-- **Backend**: Spring Boot (Java)
-- **IA Service**: FastAPI (Python)
+Nosso projeto é modular e robusto, dividido em três camadas principais para garantir escalabilidade e manutenção:
 
-## Pré-requisitos
+-   **Frontend**: ⚛️ Desenvolvido com **React**, **Vite** e estilizado com **Tailwind CSS** para uma interface de usuário dinâmica e responsiva.
+-   **Backend**: ☕️ Construído com **Spring Boot (Java)**, fornecendo uma API RESTful segura e eficiente.
+-   **IA Service**: 🧠 Alimentado por **FastAPI (Python)**, dedicado ao processamento inteligente de dados com IA.
 
-- Node.js (v18+)
-- Java JDK 21
-- Maven
-- Python 3.10+
-- PostgreSQL (para produção)
+## ✅ Pré-requisitos
 
-## Como Rodar Localmente
+Para rodar o CacoIA localmente, você precisará dos seguintes softwares instalados:
 
-### 1. Frontend
+-   [Node.js](https://nodejs.org/en/download/) (v18+)
+-   [Java JDK 21](https://www.oracle.com/java/technologies/downloads/)
+-   [Maven](https://maven.apache.org/download.cgi)
+-   [Python 3.10+](https://www.python.org/downloads/)
+-   [PostgreSQL](https://www.postgresql.org/download/) (Recomendado para ambiente de produção)
+
+## 💻 Como Rodar Localmente
+
+Siga os passos abaixo para colocar o CacoIA em funcionamento no seu ambiente de desenvolvimento:
 
 ```bash
 cd frontend
 npm install
 npm run dev
-```
 
-O frontend estará disponível em: `http://localhost:5173`
+### 2. backend
 
-### 2. Backend (Java)
-
-```bash
 cd backend
 mvn spring-boot:run
-```
 
-O backend estará disponível em: `http://localhost:8080`
-
-### 3. IA Service (Python)
-
-```bash
+### 3. I.A
 cd ia-service
 python -m venv venv
 # No Windows:
@@ -55,48 +49,3 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 uvicorn main:app --reload
-```
-
-O serviço de IA estará disponível em: `http://localhost:8000`
-
-## Estrutura do Projeto
-
-```
-caco/
-├── frontend/           # React + Vite
-│   ├── src/
-│   ├── public/
-│   └── package.json
-├── backend/            # Spring Boot
-│   ├── src/
-│   └── pom.xml
-├── ia-service/         # FastAPI
-│   ├── main.py
-│   └── requirements.txt
-└── README.md
-```
-
-## Fluxo de Dados
-
-1. Usuário envia texto pelo **Frontend**
-2. **Frontend** → **Backend Java** (porta 8080)
-3. **Backend Java** → **Serviço Python** (porta 8000)
-4. **Serviço Python** processa com IA simulada
-5. Resposta retorna pelo mesmo caminho
-
-## Tecnologias
-
-- **Frontend**: React, Vite, Tailwind CSS, Axios
-- **Backend**: Spring Boot, Spring Security, RestTemplate
-- **IA**: FastAPI, Pydantic
-- **Banco**: PostgreSQL (produção), H2 (desenvolvimento)
-
-## Cores do Tema 🎨
-
-- Marrom: #5d4037, #6d4c41, #3e2723
-- Laranja: #ff6f00, #d84315
-- Bege: #ffe0b2, #fff3e0
-
----
-
-Feito com ❤️ por CacoIA
