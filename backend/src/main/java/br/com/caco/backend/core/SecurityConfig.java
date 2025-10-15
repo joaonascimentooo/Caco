@@ -1,4 +1,4 @@
-package br.com.caco.backend.core.config;
+package br.com.caco.backend.core;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
